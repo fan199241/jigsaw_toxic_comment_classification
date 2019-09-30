@@ -1,9 +1,10 @@
 # jigsaw_toxic_comment_classification
-The project is solving multi-label classification problem. Dataset from kaggle website: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/
 
-Given a group of sentences or paragraphs, which was used as a comment by a user in an online platform, our task is to classify it to belong to one or more of the following **six categories** - toxic, severe-toxic, obscene, threat, insult or identity-hate. This is a **multi-label classification problem**. In multi-label classification, data can belong to more than one label simultaneously. 
+Given a group of sentences or paragraphs, which was used as a comment by a user in an online platform, the task is to classify it to belong to one or more of the following **six categories** - toxic, severe-toxic, obscene, threat, insult or identity-hate. This is a **multi-label classification problem**. In multi-label classification, data can belong to more than one label simultaneously. 
 
 The evaluation metric is the mean column-wise **ROC AUC**. In other words, the score is the average of the individual AUCs of each predicted column.
+
+Dataset from kaggle website: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/
 
 ## PROJECT DESIGN & WORKFLOW
 
