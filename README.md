@@ -6,8 +6,8 @@ The evaluation metric is the mean column-wise **ROC AUC**. In other words, the s
 
 Dataset from kaggle website: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/
 
-The baseline model is using logistic regression model, which gains the final score 
-The improved model is using LSTM deep learning model, which gains the final score 
+The baseline model is using logistic regression model, which gains the final score 0.97421.
+The improved model is using LSTM deep learning model, which gains the final score 0.97233.
 
 ## PROJECT DESIGN & WORKFLOW
 
