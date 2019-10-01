@@ -12,54 +12,37 @@ The improved model is using LSTM deep learning model, which gains the final scor
 ## PROJECT DESIGN & WORKFLOW
 
 The project will comprise broadly the following steps:
-### STEP 1: PREPROCESSING
-• Convert each comment_text field to lower case letters
+### STEP 1: Read Training and Test Files
 
-• Remove any punctuation marks (?!#,.etc)
+### STEP 2: Exploraty Data Analysis
 
-• Using count vectorizer, generate a vector showing the frequency of each word in a
-comment
+• Dimensions of the data set
 
-• Divide the data into training and testing
-### STEP 2: CREATING METHODS FOR EVALUATION METRICS
-• find_accuracy
+• Completeness of data set (missing values checking)
 
-• find_hamming_loss
-### STEP 3: WORKING WITH THE BENCHMARK MODEL (svm with radial kernel)
-• Import the necessary files and create the model classifier
+• Calculate and add 'clean' (the comments are not in any toxic categories) as new column
 
-• Fit it to the training data using 5 fold cross-validation
+• Identify the distribution of labels
 
-• Predict using test data
+• Characters and words number statistics
 
-• Calculate various evaluation metrics
-### STEP 4: USING TRANSFORMATION METHODS
-• Create a method for binary-relevance method using benchmark model as base classifier
+### STEP 3: Data Cleaning
 
-• Create a method for either LP (Label Power Set) or CC(classifier chain)
+• Check the normal alphabet and to figure out the abnormal special characters
 
-• Fit classifier to training data
+• Clean and remove some meaningless messy characters
 
-• Predict labels
+• Normalization: convert the comments to lower cases
 
-• Calculate various evaluation metrics
-### STEP 5: USING ADAPTATION ALGORITHMS
-• Create classifiers for adaboost MH and MR models
+### STEP 4: Model Building
 
-• Try out different base classifiers for the above defined models
+• Define the basic model architecture
 
-• Fit classifier to training data
-
-• Predict labels and calculate various evaluation metrics
-### STEP 6: IMPLEMENTING BP-MLL NEURAL NETWORKS
-• Study and define the basic model architecture
-
-• Compile your model using optimisers and accuracy as metric
+• Compile the model using optimisers and accuracy as metric
 
 • Run the model for certain epochs and batch size
 
-• Calculate accuracy
-### STEP 7: COMPILING RESULTS
+### STEP 5: COMPILING RESULTS
 • Compare the results for different models
 
 • Decide which is the best model for given dataset
